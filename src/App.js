@@ -13,11 +13,27 @@ function App() {
       <h1><strong>Box Shadow Generator</strong></h1>
       <div className="content">
         <div className="controls">
-          <label>Horizontal Length</label>
+          <div className="input-container">
+            <label>Horizontal Length</label>
+            <div className="input-content">
+              <input type="text" min="-200" max="200" value={Hori} onChange={(e)=>setHori(e.target.value)} /> px
+            </div>  
+          </div>
           <input type="range" min="-200" max="200" value={Hori} onChange={(e)=>setHori(e.target.value)} />
-          <label>Vertical Length</label>
+          
+          <div className="input-container">
+            <label>Vertical Length</label>
+            <div className="input-content">
+              <input type="text" min="-200" max="200" value={Verti} onChange={(e)=>setVerti(e.target.value)} /> px
+            </div>
+          </div>
           <input type="range" min="-200" max="200" value={Verti} onChange={(e)=>setVerti(e.target.value)} />
-          <label>Blur</label>
+          <div className="input-container">
+            <label>Blur</label>
+            <div className="input-content">
+              <input type="text" min="0" max="200" value={Blur} onChange={(e)=>setBlur(e.target.value)} /> px
+            </div>
+          </div>
           <input type="range" min="0" max="200" value={Blur} onChange={(e)=>setBlur(e.target.value)} />
           <label>Shadow Color</label>
           <input className="color-pallet" type="color" value={Color} onChange={(e)=>setColor(e.target.value)} /><br/>

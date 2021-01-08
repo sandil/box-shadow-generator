@@ -17,6 +17,14 @@
 .controls label {
   font-size: 20px;
 }
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-content input[type=text] {
+  width: 50px;
+}
 .output {
   width: 30vw;
   height: 50vh;
